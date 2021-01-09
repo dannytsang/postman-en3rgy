@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "88a4e1e5-af14-4abc-9413-98c834977c81",
+		"name": "n3rgy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Electricity",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{MAC}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://consumer-api.data.n3rgy.com/electricity/consumption/1?",
+					"protocol": "https",
+					"host": [
+						"consumer-api",
+						"data",
+						"n3rgy",
+						"com"
+					],
+					"path": [
+						"electricity",
+						"consumption",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Gas",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{MAC}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://consumer-api.data.n3rgy.com/gas/consumption/1?",
+					"protocol": "https",
+					"host": [
+						"consumer-api",
+						"data",
+						"n3rgy",
+						"com"
+					],
+					"path": [
+						"gas",
+						"consumption",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Gas Copy",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{MAC}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://consumer-api.data.n3rgy.com/gas/consumption/1?",
+					"protocol": "https",
+					"host": [
+						"consumer-api",
+						"data",
+						"n3rgy",
+						"com"
+					],
+					"path": [
+						"gas",
+						"consumption",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
