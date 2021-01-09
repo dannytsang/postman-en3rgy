@@ -94,7 +94,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Gas Copy",
+			"name": "Get Gas Date Time Range",
 			"request": {
 				"auth": {
 					"type": "apikey",
@@ -124,6 +124,50 @@
 					],
 					"path": [
 						"gas",
+						"consumption",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Electricity Date Time Range",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{MAC}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://consumer-api.data.n3rgy.com/electricity/consumption/1?",
+					"protocol": "https",
+					"host": [
+						"consumer-api",
+						"data",
+						"n3rgy",
+						"com"
+					],
+					"path": [
+						"electricity",
 						"consumption",
 						"1"
 					],
